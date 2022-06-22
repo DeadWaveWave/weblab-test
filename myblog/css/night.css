@@ -1,0 +1,363 @@
+body {
+  display: block;
+  
+  margin:0;/* 消去外边框 */
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 1em;
+  line-height: 2;
+  
+    color: #DCDDDE;
+    background: #202020;
+ 
+}
+
+#SAO-Notify,
+#toc #full,
+#c-block #c-full{
+font-family:'SAOUI',Langar,-apple-system,sans-serif;
+position:fixed;
+border-radius:5px;
+box-shadow:2px 2px 10px #555;
+display:block;
+}     
+#SAO-Notify{
+text-shadow:0.5px 0.5px 0.5px#888;
+font-weight:bolder;
+z-index:9999;
+margin:auto auto;
+height:240px;
+width:350px;
+bottom:0;right:0;left:0;top:0;
+background: #09f;
+animation:flashOpen 1s ease alternate;
+}
+.notify-title{
+display:block;
+height:60px;width:100%;
+font-size:20px;
+text-align:center;
+border-top-left-radius:5px;
+border-top-right-radius:5px;
+padding-top:10px;
+color:#444;
+}
+.notify-alert::-webkit-scrollbar{
+display:none;
+}
+.notify-alert{
+display:flex;
+overflow:scroll;
+
+height:120px;
+width:100%;
+justify-content:space-around;
+align-items:center;
+text-align:center;
+
+box-shadow:0px 0px 15px#bcbcbc inset;
+background:#fff;
+color:rgba(60,60,61,0.7);
+}
+.notify-button{
+height:60px;width:100%;
+display:block;
+text-align:center;
+border-bottom-left-radius:5px;
+border-bottom-right-radius:5px;
+padding-top:12.5px;
+}
+.notify-receive{
+background:rgba(47,121,212,0);
+border-radius:50%;
+display:inline-block;
+width:36px;
+height:36px;
+border-color:#eda60c;
+}
+.notify-receive button{
+background:#eda60c;
+text-align:center;
+border-radius:50%;
+font-size:18px;
+color:#fff;
+display:block;
+width:30px;
+height:30px;
+margin:2px;
+}
+
+button a,
+button a:hover{
+border-bottom: none;
+}
+
+@-moz-keyframes flashOpen{from{transform:rotateX(90deg)}to{transform:rotateX(0deg)}}
+@-webkit-keyframes flashOpen{from{transform:rotateX(90deg)}to{transform:rotateX(0deg)}}
+@-o-keyframes flashOpen{from{transform:rotateX(90deg)}to{transform:rotateX(0deg)}}
+@keyframes flashOpen{from{transform:rotateX(90deg)}to{transform:rotateX(0deg)}}
+@-moz-keyframes flashClose{from{transform:rotateX(0deg)}to{transform:rotateX(90deg)}}
+@-webkit-keyframes flashClose{from{transform:rotateX(0deg)}to{transform:rotateX(90deg)}}
+@-o-keyframes flashClose{from{transform:rotateX(0deg)}to{transform:rotateX(90deg)}}
+@keyframes flashClose{from{transform:rotateX(0deg)}to{transform:rotateX(90deg)}}
+
+/* 大纲设置 */
+#toc{
+position: fixed;
+height: 100%;
+width: 8%;
+margin: 20px 0;
+display: flex;
+flex-direction: column;
+}
+
+#toc #full,
+#c-block #c-full { display: none; }
+
+#toc:hover #full{
+display: block;
+margin-left: -6px;
+height: 75%;
+min-width: 230px;
+background: #202020;
+}/* 大纲本体 */
+
+#toc a:hover,
+#c-block a:hover{
+display: block;
+background-color: #555;
+}/* 悬浮指示 */
+#toc a,
+#c-block a{
+display: block;
+}
+
+#c-block{
+position: fixed;
+right: 0px;
+height: 60%;
+width: 8%;
+margin: 100px 0;
+display: flex;
+flex-direction: column;
+}
+#c-block:hover #c-full{
+display: block;
+right: 0px;
+margin-right: -6px;
+height: 50%;
+min-width: 200px;
+background: #202020;
+}/* 资料重整 */
+
+/* 导航栏设置 */
+#header{
+margin:0 auto;
+width:auto;
+height: 50px; /* 规范导航栏大小 */
+line-height: 50px; /* 规范导航栏内元素大小 */
+
+padding: 1px;
+text-align: center;
+
+background-color: #111;
+}/* 对导航栏的整体样式进行设置 */
+
+.nav1 {
+position: relative;/* 设置相对定位 */
+display: inline-block;/* 让元素具有块级元素和行内元素的特性,即将块级元素转化为内联元素 */
+min-width: 120px;
+}
+.nav1:hover{
+background-color: #12adb8;
+}
+.nav1 a{
+  display: block;
+  color:#555;
+}/* 设置a标签的样式 */
+.nav1:hover .nav2 {
+display: block;
+}/* 鼠标悬浮在元素上时,变为块级标签 */
+
+.nav2 {
+display: none;/* 将某元素隐藏起来 */
+position: absolute;/* 绝对定位 */
+background-color: #f9f9f9;
+min-width: 120px;/* 最小宽度 */
+}
+.nav2 a {
+display: block;/* 将a标签设置为块级标签 */
+color: #222;
+}
+.nav2 a:hover {
+background-color: #da8181
+}/* 鼠标悬浮时的颜色 */
+
+
+#toc a,
+#toc a:hover,
+#c-block a,
+#c-block a:hover,
+#header a{
+border-bottom: none;
+}
+#toc .foucsable,
+#c-block .foucsable{
+margin: 0 20px;
+}
+
+#msc{
+position: fixed;
+right: 10px;
+bottom: 15px;
+background-color:#FFF;
+}
+
+/* 阅读风格设置 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+font-weight: bold;
+line-height: 1.5;
+margin: 20px 0 15px;
+}
+h1 {
+font-size: 1.5em;
+}
+h2 {
+font-size: 1.375em;
+}
+h3 {
+font-size: 1.25em;
+}
+h4 {
+font-size: 1.125em;
+}
+h5 {
+font-size: 1em;
+}
+h6 {
+font-size: 0.875em;
+}
+p {
+margin: 0 0 20px 0;
+}
+
+/* 设置a标签的样式 */
+a{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  border-bottom: 1px dashed #999;
+  cursor: pointer;
+  text-decoration: none;
+  
+  color: #DCDDDE;
+  background: transparent;
+}
+a:hover{
+  color: rgb(110, 244, 216);
+  cursor: pointer;
+  border-bottom: 1px solid rgb(110, 244, 216);
+}
+
+/* 内容显示设置 */
+.main-inner{
+margin: 0 auto;
+max-width: 720px;  /* 限制内容范围 */
+padding-bottom: 80px;
+}
+.content{
+padding-top: 80px;
+width: 100%;
+}/* 限制内容显示范围 */
+
+.posts-expand{
+padding-top: 0;
+}
+
+.posts-block{
+display: block;
+}
+
+.posts-expand .post-header{
+font-size: 1.125em;
+}
+
+.posts-expand .posts-title{
+font-weight: 400;
+margin: initial;
+text-align: center;
+overflow-wrap: break-word;
+word-wrap: break-word;
+}
+
+.posts-expand .post-title-link {
+border-bottom: none;
+color: #DCDDDE;
+display: inline-block;
+vertical-align: top;
+}
+
+.posts-expand .post-title-link::before {
+background: #222;
+bottom: 0;
+content: '';
+height: 2px;
+left: 0;
+position: absolute;
+transform: scaleX(0);
+visibility: hidden;
+width: 100%;
+transition-delay: 0s;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+.posts-expand .posts-meta {
+color: #999;
+font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+font-size: 0.9em;
+margin: 3px 0 40px 0;
+text-align: center;
+}
+
+.post-body iframe,
+.post-body img,
+.post-body video {
+margin-bottom: 20px;
+}
+
+.medium-zoom-image {
+cursor: pointer;
+cursor: zoom-in;
+transition: transform .3s cubic-bezier(.2,0,.2,1)!important;
+}
+
+.main img {
+border-style: none;
+transition: all .3s; 
+}
+
+.main iframe,
+.main img,
+.main video {
+display: block;
+margin-left: auto;
+margin-right: auto;
+max-height: 550px;
+max-width: 100%;
+}
+
+.img-p{
+text-align: center;
+color:#999;
+}
+
+code{
+  display: block;
+  background:#f6f7ff;
+}
