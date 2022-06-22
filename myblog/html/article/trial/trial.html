@@ -1,0 +1,451 @@
+<html> 
+    <head> 
+        <meta charset="utf-8">
+        <title>trial</title> 
+        <link rel="shortcut icon" href="../../../images/logo.jpg"/>
+        <link type="text/css" id="pagestyle" rel="stylesheet" href="../../../css/main.css" />
+        <script type="text/javascript" src="../../../js/c-block.js"></script>
+        <script type="text/javascript" src="../../../js/cm.js"></script>
+        <audio src="../../../sound/Strad.mp3" loop preload="auto" id="music"></audio>
+        <style>
+            xmp{
+                background:#f6f7ff
+            }
+        </style>
+    </head> 
+    <body> 
+        <!--切换风格-->
+        <div style="position:absolute; right:1px; top:1px; z-index:666;">
+            <select onchange="chgStyle(this.value)">
+                <option value="main">白色主题</option>
+                <option value="night">夜间主题</option>
+            </select>
+        </div>
+        <!--播放音乐-->
+        <div id="msc"><button>music</button></div>
+        <!--导航栏-->
+        <header id="header">
+            <a href="../../../index.html"><img style="margin: 6px 0 0 0" src="../../../images/Wave_logo_refine.png" alt="Wave logo" width="66" height="22"></a>
+            <div class="nav1">
+                <a href="../../introduce.html">Wave</a>
+                <div class="nav2">
+                    <a href="#">trial</a>
+                    <a href="https://www.zhihu.com/people/bei-pai-si-zai-an-shang-de-qian-lang">知乎</a>
+                    <a href="https://space.bilibili.com/36461374?spm_id_from=333.1007.0.0">Bilibili</a>
+                    <a href="https://airy-comb-d67.notion.site/WaveNotes-bf4468e1a87a464d667ec44b628cf482">WaveNotes</a>
+                </div>
+            </div>
+            <div class="nav1">
+                <a href="#">Reference</a>
+                <div class="nav2">
+                    <a href="https://riceball.me/">Riceball</a>
+                    <a href="http://theme-next.iissnan.com/">NexT</a>
+                    <a href="../../reference.html">参考文献</a>
+                </div>
+            </div>
+            <div class="nav1">
+                <a href="#">Resource</a>
+                <div class="nav2">
+                    <a href="../study/study.html">Study</a>
+                    <a href="../books/books.html">Books</a>
+                    <!-- <a href="http://mergemusic.cn/#/">Music</a> -->
+                    <a href="../photograph/photo.html">Photo</a>
+                    <a href="../tools/tools.html">Tool</a>
+                    <a href="#">Interesting</a>
+                </div>
+            </div>
+            <div class="nav1">
+                <a href="#" class="cont">Strange</a>
+                <div class="nav2">
+                    <a href="https://www.bilibili.com/video/BV1uT4y1P7CX/?spm_id_from=333.788.recommend_more_video.0">恋爱交友</a>
+                </div>
+            </div> 
+        </header>
+
+        <!--页面大纲-->
+        <div id="toc">
+            <div id="full">
+                <a href="#"><div class="foucsable"><h6>大型试验场</h6></div></a>
+                <a href="#start" name="1"><div class="foucsable"><li>一切的起点</li></div></a>
+                <a href="#time" name="2"><div class="foucsable"><li>时间显示效果演示</li></div></a>
+                <a href="#arr" name="3"><div class="foucsable"><li>页面排版效果演示</li></div></a>
+                <a href="#img" name="4"><div class="foucsable"><li>点击图片放大的简易演示</li></div></a>
+                <a href="#img" name="5"><div class="foucsable"><li>跑马灯效果</li></div></a>
+                <a href="#cmt" name="6"><div class="foucsable"><li>一个无效的留言板</li></div></a>
+            </div>
+        </div>        
+        <!--资料重整-->
+        <div id="c-block">
+            <div id="c-full">
+                <a><div class="foucsable" id="whole"><h6>角度选择</h6></div></a>
+                <a><div class="foucsable" id="btn1"><li>我为什么要写这个试验场？</li></div></a>
+                <a><div class="foucsable" id="btn2"><li>时间显示效果演示</li></div></a>
+                <a><div class="foucsable" id="btn3"><li>页面排版效果演示</li></div></a>
+                <a><div class="foucsable" id="btn4"><li>点击图片放大的简易演示</li></div></a>
+                <a><div class="foucsable" id="btn5"><li>跑马灯效果</li></div></a>
+                <a><div class="foucsable" id="btn6"><li>一个无效的留言板</li></div></a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="main-inner" style="max-width: 800px">
+                <div class="content">
+                    <div class="posts-expand">
+                        <article class="posts-block">
+                            <div class="posts-header">
+                                <h1 class="posts-title" id="trial"><a href="#" class="post-title-link">大型试验场</a> </h1>
+                                <div class="posts-meta">
+                                    <span>发布于：<a>2022/6/24</a></span> | <span>分类：<a>测试</a></span> | <span>作者：<a>石浩洁</a></span>
+                                </div>
+                                <hr/>
+                            </div>
+                            <div class="post-body">
+                                <div name="1">
+                                    <h2 id="start">试验场的起点</h2>
+                                    <p>我总想在这写点什么...</p>
+                                    <p>我在学习各种知识的时候，总是被搜索到的知识与知识之间的不连贯与案例的不直观等问题白白浪费很多的时间。即便互联网非常发达，即便搜索引擎相等之多，想要找到自己需要的东西仍然很难。</p>
+                                    <p>为了解决这个问题，我打算在此开始实验性地开创一些课程的指南，让大家在学习一些课程的时候能够节省查找资料的时间，很好地学习到一些有用的案例。</p>
+                                    <p>很明显，现在的准备还不够充分，但是我会在以后不断地完善该网站，让大家能够自己制作一些教程以方便大家的学习。</p>
+                                    <p>在这里，有这个网页部分页面效果的功能demo演示（因为没时间了！就放一部分吧...），如果你感兴趣的话，可以在下边试试。</p>
+                                    <p>演示的后面有效果实现的代码。</p>
+                                    <p>希望对你有所帮助。</p>
+                                    <hr/>
+                                </div>
+                                <div name="2">
+                                    <h1 id="time">时间显示效果演示</h1>
+                                    <a href="./time.html">页面效果呈现</a>
+                                    <div id="Time">Time</div>
+                                    <p><b>代码实现：</b></p>
+                                    <xmp style="background:#f6f7ff">
+        <script>
+            function myDate(){
+                var now=new Date();
+                var year=now.getFullYear();
+                var month=now.getMonth()+1;
+                var day=now.getDate();
+                var hours=now.getHours();
+                var minutes=now.getMinutes();
+                var seconds=now.getSeconds();
+                
+                document.getElementById("Time").innerHTML=year+"年"+month+"月"+day+"日"+hours+":"+minutes+":"+seconds;
+            }
+            setInterval(myDate,1000);
+        </script>
+
+        <div id="Time">Time</div>
+                                    </xmp>
+                                    <hr/>
+                                </div>
+
+
+                                <div name="3">
+                                    <h1 id="arr">页面排版效果演示</h1>
+                                    <a href="./arrange.html">页面效果</a>
+                                    <p>点击下面的按钮可以展示不同的内容排版</p>
+                                    <style>
+                                        .divs {
+                                          height: 200px;
+                                          margin-bottom: 10px;
+                                          background-color: #a43036;
+                                          display: block;
+                                        }
+                                    </style>
+                                    <script>
+                                        //等待页面加载完成后才会执行。
+                                        if (document.all)
+                                        {
+                                            window.attachEvent('onload', c_b)
+                                        }
+                                        else
+                                        {
+                                            window.addEventListener('load', c_b, false);
+                                        }
+                                        function c_b() {
+                                          var alll = document.getElementById("alll");
+                                          var btn11 = document.getElementById("btn11");
+                                          var btn22 = document.getElementById("btn22");
+                                          var div11 = document.getElementsByName("11");
+                                          var div22 = document.getElementsByName("22");
+                                      
+                                          alll.onclick = function () {
+                                            for (var i = 0; i < div22.length; i++) {
+                                              div22[i].style.display = "block";
+                                            }
+                                            for (var i = 0; i < div11.length; i++) {
+                                              div11[i].style.display = "block";
+                                            }
+                                          }
+                                    
+                                          btn11.onclick = function () {
+                                            for (var i = 0; i < div22.length; i++) {
+                                              div22[i].style.display = "none";
+                                            }
+                                            for (var i = 0; i < div11.length; i++) {
+                                              div11[i].style.display = "block";
+                                            }
+                                          }
+                                      
+                                          btn22.onclick = function () {
+                                            for (var i = 0; i < div11.length; i++) {
+                                              div11[i].style.display = "none";
+                                            }
+                                            for (var i = 0; i < div22.length; i++) {
+                                              div22[i].style.display = "block";
+                                            }
+                                          }
+                                        }
+                                    </script>
+                                    <input type="button" value="全部" id="alll">
+                                    <!-- <div id="all">全部</div> -->
+                                    <input type="button" value="展示1" id="btn11">
+                                    <!-- <div id="btn1">展示1</div> -->
+                                    <input type="button" value="展示2" id="btn22">
+                                    <!-- <div id="btn2">展示2</div>  -->
+                                    
+                                    <div class="divs" name="11">1</div>
+                                    <!-- <div class="divs" name="1"><div class="divs" name="2" style="background:green">2</div> 目前这个有缺陷</div>  -->
+                                    <div class="divs" name="11">2</div> 
+                                    <div class="divs" name="22" style="background:green">3</div>
+                                    <div class="divs" name="11">4</div>
+
+                                    <p><b>代码实现：</b></p>
+                                    <xmp style="background:#f6f7ff">
+        <script>
+            //等待页面加载完成后才会执行。
+            window.onload = function () {
+                var all = document.getElementById("all");
+                var btn1 = document.getElementById("btn1"); /* 这个可以省略 */
+                var btn2 = document.getElementById("btn2");
+                var div1 = document.getElementsByName("1");
+                var div2 = document.getElementsByName("2");
+                
+                all.onclick = function () {
+                    for (var i = 0; i < div2.length; i++) {
+                        div2[i].style.display = "block";
+                    }
+                    for (var i = 0; i < div1.length; i++) {
+                        div1[i].style.display = "block";
+                    }
+                }
+                
+                btn1.onclick = function () {
+                    for (var i = 0; i < div2.length; i++) {
+                        div2[i].style.display = "none";
+                    }
+                    for (var i = 0; i < div1.length; i++) {
+                        div1[i].style.display = "block";
+                    }
+                }
+                
+                btn2.onclick = function () {
+                    for (var i = 0; i < div1.length; i++) {
+                        div1[i].style.display = "none";
+                    }
+                    for (var i = 0; i < div2.length; i++) {
+                        div2[i].style.display = "block";
+                    }
+                }
+            }
+            </script>
+
+            <input type="button" value="全部" id="all">
+            <input type="button" value="展示1" id="btn1">
+            <input type="button" value="展示2" id="btn2">
+            <!-- 如果是不用按钮的话，就用下面的办法 -->
+            <!-- <div id="all">全部</div> -->
+            <!-- <div id="btn1">展示1</div> -->
+            <!-- <div id="btn2">展示2</div>  -->
+                                        
+            <div class="divs" name="11" style="background:red">1</div>
+            <div class="divs" name="11" style="background:red">2</div> 
+            <div class="divs" name="22" style="background:green">3</div>
+            <div class="divs" name="11" style="background:red">4</div>
+                                    </xmp>
+                                    <hr/>
+                                </div>
+                                
+                                <div name="4">
+                                    <h2 id="img">点击图片放大的简易演示</h2>
+                                    <img  src="../../../images/海边划水的浪花.jpg" alt="海边划水的浪花" class=".medium-zoom-image" style="width:300px; height:300px" onclick="show(this)"/>
+                                    <xmp>
+    <script>
+        var flag=false;
+        function show(pic){
+            if(flag==false){
+                pic.style.transform = "translate(0px, 0px) scale(2) rotate(0deg)";
+                flag=true;
+            } else {
+                pic.style.transform = "none";
+                flag=false;
+            }
+        }
+    </script>
+
+    <img  src="../images/海边划水的浪花.jpg" alt="海边划水的浪花" class=".medium-zoom-image" style="width:300px; height:300px" onclick="show(this)"/>
+                                    </xmp>
+                                    <hr/>
+                                </div>
+
+                                <style type="text/css">
+                                    #wrap {
+                                        width: 100%;
+                                        margin: 20px auto;
+                                        border: 2px solid green;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        color: rgb(110, 244, 216);
+                                        background: #1c1c51;
+                                    }
+                            
+                                    #wrap div {
+                                        display: inline-block;
+                                        font-size: 20px;
+                                    }
+                                </style>
+                                <div name="5">
+                                    <h3>跑马灯效果</h3>
+                                    <a href="../../../index.html">页面效果</a>
+                                    <div id="wrap">
+                                        <div id="first">
+                                            <pre>                                                                                        </pre>
+                                        </div>
+                                        <div id="mid">
+                                            曾经有一份真诚的指南放在我面前，我没有珍惜，等我失去的时候我才后悔莫及，人世间最痛苦的事莫过于此。如果上天能够给我一个再来一次的机会，我会对那个男孩子说：生产队的驴都不敢这么歇的！如果非要在这份努力上加上一个期限，我希望是……一万年
+                                        </div>
+                                        <div id="last">
+                                            <pre>                                                                                        </pre>
+                                        </div>
+                                    </div>
+                                <b>代码实现：</b>
+                                <xmp>
+    <style type="text/css">        
+        #wrap {
+            width: 100%;
+            margin: 20px auto;
+            border: 2px solid green;
+            white-space: nowrap;
+            overflow: hidden;
+            color: rgb(110, 244, 216);
+            background: #1c1c51;
+        }
+        
+        #wrap div {
+            display: inline-block;
+            font-size: 20px;
+        }
+    </style>
+
+    <div>
+        <h3>跑马灯效果</h3>
+        <div id="wrap">
+            <div id="first">
+                <pre>                                                                                        </pre>
+            </div>
+            <div id="mid">
+                曾经有一份真诚的指南放在我面前，我没有珍惜，等我失去的时候我才后悔莫及，人世间最痛苦的事莫过于此。
+                如果上天能够给我一个再来一次的机会，我会对那个男孩子说：生产队的驴都不敢这么歇的！
+                如果非要在这份努力上加上一个期限，我希望是……一万年
+            </div>
+            <div id="last">
+                <pre>                                                                                        </pre>
+            </div>
+        </div>
+        <hr/>
+    </div>
+
+    <script type="text/javascript">
+        (function () {
+            var wrap = document.getElementById('wrap'), 
+                first = document.getElementById('first'), 
+                mid = document.getElementById('mid');
+            var timer = window.setInterval(move, 5);
+            wrap.onmouseover = function () {
+                window.clearInterval(timer);
+            };
+            wrap.onmouseout = function () {
+                timer = window.setInterval(move, 5);
+            };
+            function move() {
+                wrap.scrollLeft++;
+                if (wrap.scrollLeft >= first.scrollWidth + mid.scrollWidth) {
+                    wrap.scrollLeft = 0;
+                }
+            }
+        })();
+    </script>
+                                </xmp>
+                                <hr/>
+                                </div>
+
+                                <div name="6">
+                                    <h3 id="cmt">留言版（这是一个无效的功能）</h3>
+                                    <p>还不会存数据，所以用不了emmm</p>
+                                    <ol id="olid">
+                                        <li>浪花：留言不了啊，太难受了！！！！！！！</li>
+                                    </ol>
+                                    <textarea id="txtCom"></textarea>
+                                    <br />
+                                    <button id="btnx">评论</button>
+                                </div>
+                                <p class="img-p">-我是有底线的-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body> 
+
+    <!--控制风格-->
+    <script>
+        function chgStyle(v){
+            document.getElementsByTagName("link")["pagestyle"].href ="../../../css/"+v+".css";
+        }
+    </script>
+
+    <script>
+        //时间显示
+    function myDate(){
+        var now=new Date();
+        var year=now.getFullYear();
+        var month=now.getMonth()+1;
+        var day=now.getDate();
+        var hours=now.getHours();
+        var minutes=now.getMinutes();
+        var seconds=now.getSeconds();
+
+        document.getElementById("Time").innerHTML=year+"年"+month+"月"+day+"日"+hours+":"+minutes+":"+seconds;
+    }
+    setInterval(myDate,1000);
+    </script>
+    
+<!--跑马灯-->
+<script type="text/javascript">
+    (function () {
+        var wrap = document.getElementById('wrap'), first = document.getElementById('first'), mid = document.getElementById('mid');
+        var timer = window.setInterval(move, 5);
+        wrap.onmouseover = function () {
+            window.clearInterval(timer);
+        };
+        wrap.onmouseout = function () {
+        timer = window.setInterval(move, 5);
+    };
+    function move() {
+        wrap.scrollLeft++;
+        if (wrap.scrollLeft >= first.scrollWidth + mid.scrollWidth) {
+            wrap.scrollLeft = 0;
+        }
+    }
+})();
+</script>
+
+    <!--发表评论-->
+    <script>
+        $("#btnx").click(function(){
+            //获取评论文本框的值
+            var $txtCoom=$("#txtCom").val();
+            //将值付给li
+            $("ol").append("<li>一位不知名的游客曰："+$txtCoom+"”</li>");
+        });
+    </script>
+</html>

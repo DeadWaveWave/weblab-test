@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Study</title> 
+        <link rel="shortcut icon" href="../../../images/logo.jpg"/>
+        <link type="text/css" id="pagestyle" rel="stylesheet" href="../../../css/main.css" />
+        <script type="text/javascript" src="../../../js/c-block.js"></script>
+        <script type="text/javascript" src="../../../js/cm.js"></script>
+    </head> 
+    <body> 
+        <!--切换风格-->
+        <div style="position:absolute; right:1px; top:1px; z-index:999;">
+            <select onchange="chgStyle(this.value)">
+                <option selected value="main">白色主题</option>
+                <option value="night">夜间主题</option>
+            </select>
+        </div>
+        <!--播放音乐-->
+        <div id="msc">
+            <button>music</button>
+        </div>
+        <audio src="../../../sound/Strad.mp3" loop preload="auto" id="music"></audio>
+    <!--导航栏-->
+    <header id="header">
+        <a href="../../../index.html"><img style="margin: 9px 0 0 0" src="../../../images/Wave_logo_refine.png" alt="Wave logo" width="66" height="22" ></a>
+        <div class="nav1">
+            <a href="../../html/introduce.html">Wave</a>
+            <div class="nav2">
+                <a href="../trial/trial.html">trial</a>
+                <a href="https://www.zhihu.com/people/bei-pai-si-zai-an-shang-de-qian-lang">知乎</a>
+                <a href="https://space.bilibili.com/35461374?spm_id_from=333.1007.0.0">Bilibili</a>
+                <a href="https://airy-comb-d67.notion.site/WaveNotes-bf4458e1a87a454d957ec44b628cf482">WaveNotes</a>
+            </div>
+        </div>
+        <div class="nav1">
+            <a href="#">Reference</a>
+            <div class="nav2">
+                <a href="https://riceball.me/">Riceball</a>
+                <a href="http://theme-next.iissnan.com/">NexT</a>
+                <a href="../../html/reference.html">参考文献</a>
+            </div>
+        </div>
+        <div class="nav1">
+            <a href="#">Resource</a>
+            <div class="nav2">
+                <a href="#">Study</a>
+                <a href="../books/books.html">Books</a>
+                <!-- <a href="http://mergemusic.cn/#/">Music</a> -->
+                <a href="../photograph/photo.html">Photo</a>
+                <a href="../tools/tools.html">Tool</a>
+                <a href="#">Interesting</a>
+            </div>
+        </div>
+        <div class="nav1">
+            <a href="#">Strange</a>
+            <div class="nav2">
+                <a href="https://www.bilibili.com/video/BV1uT4y1P7CX/?spm_id_from=333.788.recommend_more_video.0">恋爱交友</a>
+            </div>
+        </div> 
+    </header>
+        <!--页面大纲-->
+        <div id="toc">
+            <div id="full">
+                <a href="#"><div class="foucsable"><h6>如何重新学会学习？</h6></div></a>
+                <a href="#start" name="1"><div class="foucsable"><li>学习是一个令人头疼的问题</li></div></a>                
+                <a href="#noNote" name="2"><div class="foucsable"><li>什么是笔记</li></div></a>
+                <a href="#noNote" name="2"><div class="foucsable"><li>如何不做笔记</li></div></a>
+                <a href="#misunderstand" name="3"><div class="foucsable"><li>学习的误区</li></div></a>
+            </div>
+        </div>        
+        <!--资料重整-->
+        <div id="c-block">
+            <div id="c-full">
+                <a><div class="foucsable" id="whole"><h6>角度选择</h6></div></a>
+                <a><div class="foucsable" id="btn1"><li>学习问题</li></div></a>                
+                <a><div class="foucsable" id="btn2"><li>笔记问题</li></div></a>
+                <a><div class="foucsable" id="btn3"><li>学习的误区</li></div></a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="main-inner">
+                <div class="content">
+                    <div class="posts-expand">
+                        <article class="posts-block">
+                            <div class="posts-header">
+                                <h1 class="posts-title" id="trial"><a href="#" class="post-title-link">如何重新学会学习？</a> </h1>
+                                <div class="posts-meta">
+                                    <span>发布于：<a>2022/2/?</a></span> | <span>分类：<a>探讨</a></span> | <span>作者：<a>石浩洁</a></span>
+                                </div>
+                                <hr/>
+                            </div>
+                            <div class="post-body">
+                                <div name="1">
+                                    <h2 id="start">学习是一个令人头疼的问题</h2>
+                                    <p>我总想在这写点什么...</p>
+                                    <p>事实上，学习与天赋有关，是因为有些人在小时候就已经掌握了学习的本质，能够快速地找到内容的规律并应用它们。</p>
+                                    <p>也就是说，天赋其实就是所掌握的正确的学习方法。如果你也能掌握正确的学习方法，那么你也将获得快速学习的能力。</p>
+                                    <p>该页面将会不断更新学习方法的内容，敬请期待。</p>
+                                </div>
+                                <div name="2">
+                                    <h2 id="note">什么是笔记</h2>
+                                    <p>没什么时间，也就简要写写吧。</p>
+                                    <p>笔记，是用来整理信息的。也就是以自己的理解方式，将有效信息收集起来并装订成易于自己游览的形式。</p>
+                                    <p>既然如此，为什么还要大幅度地摘抄书上的知识点呢？</p>
+                                    <p>人的一生都在化简。大事化小，小事化了。知识亦是如此。</p>
+                                    <p>复杂的真理，化简为繁琐的论文，再到精简的教科书，随后成为你的小巧笔记。</p>
+                                    <p>人类现代文明之精华，就这么融入到了你的思维之中。这，叫做感觉（feeling）。</p>
+                                    <p>你所学到的，都变成了感觉。所有事物与经验，都化成了内心中说不出也摸不着的感觉。</p>
+                                    <p>感觉，才是人类的核心。</p>
+                                    <p>这就是笔记的核心——化简。</p>
+                                    <p>既然如此，我们也没必要去把所有的知识点都塞进去，只需要找到自己所认为的核心就行。</p>
+                                    <p>做成 mind map（思维导图），需要的时候再基于此去查阅，即可。</p>
+                                </div>
+                                <div name="2">
+                                    <h2 id="noNote">如何不做笔记？</h2>
+                                    <h3>1、尽量直接在书上划线</h3>
+                                    <p>这样不但花时间很少，而且也不必另外再花时间，书写笔记。</p>
+                                    <p>可以不写就不写，直接查就能知道的东西为啥还要抄一遍？</p>
+                                    <p>把自己想到的东西写在书上就行。</p>
+                                    <h3>2、只写行动相关的笔记</h3>
+                                    <p>只有那些需要自己要行动起来的内容，才有必要记录到笔记本上。</p>
+                                    <p>事实上，不一定是实体笔记本。你可以用手机、平板、电脑等使用笔记软件记入下来。</p>
+                                    <h3>3、学会思维导图笔记</h3>
+                                    <p>可以大幅减少记录的字数，也一目了然、易于修改。</p>
+                                    <p>用自己能够理解的文字记录下简要关键内容以及自己的思考。</p>
+                                    <img src="./线性代数.png" alt="思维导图" onclick="show(this)" />
+                                    <p class="img-p">一个思维导图</p>
+                                </div>
+                                <div name="3">
+                                    <h2 id="misunderstand">学习误区：自我感动的伪努力。</h2>
+                                    <h3>学习的困惑</h3>
+                                    <p>每天都在努力，今天也要“頑張れ”！（烂梗）= =</p>
+                                    <p>高中时，一直都在学习，但是为什么却一直没有进步？</p>
+                                    <p>明明错题本，课堂笔记，该做的都做了，为什么没有进步？</p>
+                                    <p>不禁开始自我怀疑，感叹人与人之间智商的不平等。</p>
+                                    <p>步入大学，莫名接受了自己“不如人”的标签。</p>
+                                    <p>“我真的努力过了！只是他们的智商更高而已。”每天都在用自我欺骗的方式，希望能够麻痹自己，不愿面对现实。</p>
+                                    <p>为了能够证明自己真的有在努力，每天早起晚归，去图书馆，去请教老师，去上网课...做尽一切和学习有关的事情，只是为了能够得到一些慰籍。</p>
+                                    <p>一天天过去了，看着一堆笔记和错题，买了很多教辅书，你欣慰地笑了笑。</p>
+                                    <p>终于，面临着令人喘不过气来的期末考试，你提笔走进了考场，心想“既然努力了这么久，越努力，越幸运吧。”</p>
+                                    <p>战战兢兢地翻开试卷，看到的题目似乎从来没有见过，又或是有点眼熟，却无从下笔。</p>
+                                    <p>考试过后，翻开错题本，发现第一页就是自己在试卷上写过的题目，一模一样。</p>
+                                    <p>是没有复习错题本的缘故吗？不是，你每天都在复习。</p>
+                                    <p>是没有记住的缘故吗？不是，人类从来不会忘记过目的事物。</p>
+                                    <p>我明明已经很努力了啊！！</p>
+                                    <p>翻开时间表：</p>
+                                    <div style="background:#f6f7ff">
+                                        <p>> 周一，学习新章节，看网课，记笔记并整理。</p>
+                                        <p>> 周二，刷题，摘抄错题及其解析。</p>
+                                        <p>> 周三，背单词，复习。</p>
+                                        <p>> 周四，...</p>
+                                    </div>
+                                    <p class="img-p">（以上是某位朋友的真实写照）</p>
+                                    <p>你看，我每天都在努力啊！...</p>
+                                    <h3>到底错在哪里了？</h3>
+                                    <p>写笔记有错？写错题本有错？用教辅有错？并没有。</p>
+                                    <p>只是，这个方法不一定适合你。</p>
+                                    <p>大家都这么做，并不意味着你也要这么做。</p>
+                                    <p>你需要的，是属于自己的学习方法，而不是照搬别人的学习方法，更不是强行接受别人的学习方法。</p>
+                                    <p>人与人是不同的。</p>
+                                    <p>《穷查理宝典》指出：“如果我知道能够让我致死的坑在哪里，那么我永远都不会去掉进去。”</p>
+                                    <p>问题是，在没有进行观测的情况下，除了依靠经验推测之外，你根本不知道坑在哪里。</p>
+                                    <p>既然这样，唯一的排坑手段就只有一个个去试了吧。</p>
+                                    <p>是的，这就是我的方法论。</p>
+                                    <p>最近摸索到的学习方法，即是如上所诉的“思维导图法”。</p>
+                                    <p>并非说这种方法就是正确的，只是暂时看不出来什么弊端。所以我才需要尝试，就像高三时赌上未来而逃课一样。</p>
+                                    <p>不踏出去这一步，你永远不知道这一步是否正确。</p>
+                                </div>
+                                <hr/>
+                                <p class="img-p">去试试吧，我只能这么说。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!--控制风格-->
+    <script>
+        function chgStyle(v){
+            document.getElementsByTagName("link")["pagestyle"].href ="../../../css/"+v+".css";
+        }
+    </script>
+</html>

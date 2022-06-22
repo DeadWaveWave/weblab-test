@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>参考文献</title>
+    <link rel="shortcut icon" href="../images/logo.jpg" />
+    <link type="text/css" id="pagestyle" rel="stylesheet" href="../css/main.css" />
+    <script type="text/javascript" src="../js/c-block.js"></script>
+    <script type="text/javascript" src="../js/cm.js"></script>
+</head>
+<body>
+    <!--切换风格-->
+    <div style="position:absolute; right:1px; top:-7px; z-index:999;">
+        <select onchange="chgStyle(this.value)">
+            <option selected value="main">白色主题</option>
+            <option value="night">夜间主题</option>
+        </select>
+    </div>
+    <!--播放音乐-->
+    <div id="msc">
+        <button>music</button>
+    </div>
+    <audio src="../sound/Strad.mp3" loop preload="auto" id="music"></audio>
+    <header id="header">
+        <a href="../index.html"><img style="margin: 9px 0 0 0" src="../images/Wave_logo_refine.png" alt="Wave logo" width="66" height="22" /></a>
+        <div class="nav1">
+            <a href="introduce.html">Wave</a>
+            <div class="nav2">
+                <a href="../article/trial/trial.html">trial</a>
+                <a href="https://www.zhihu.com/people/bei-pai-si-zai-an-shang-de-qian-lang">知乎</a>
+                <a href="https://space.bilibili.com/35461374?spm_id_from=333.1007.0.0">Bilibili</a>
+                <a href="https://airy-comb-d67.notion.site/WaveNotes-bf4458e1a87a454d957ec44b628cf482">WaveNotes</a>
+            </div>
+        </div>
+        <div class="nav1">
+            <a href="#">Reference</a>
+            <div class="nav2">
+                <a href="https://riceball.me/">Riceball</a>
+                <a href="http://theme-next.iissnan.com/">NexT</a>
+                <a href="#">参考文献</a>
+            </div>
+        </div>
+        <div class="nav1">
+            <a href="#">Resource</a>
+            <div class="nav2">
+                <a href="../article/study/study.html">Study</a>
+                <a href="../article/books/books.html">Books</a>
+                <!-- <a href="http://mergemusic.cn/#/">Music</a> -->
+                <a href="../article/photograph/photo.html">Photo</a>
+                <a href="../article/tools/tools.html">Tool</a>
+                <a href="#">Interesting</a>
+            </div>
+        </div>
+        <div class="nav1">
+            <a href="#">Strange</a>
+            <div class="nav2">
+                <a href="https://www.bilibili.com/video/BV1uT4y1P7CX/?spm_id_from=333.788.recommend_more_video.0">❤Love❤</a>
+            </div>
+        </div> 
+    </header>
+
+    <!--页面大纲-->      
+    <div id="toc">
+        <div id="full">
+            <a href="#refer"><div class="foucsable"><h6>参考文献</h6></div></a>
+            <a href="#preface"><div class="foucsable"><li>前言</li></div></a>
+            <a href="#el"><div class="foucsable"><li>基础功能实现</li></div></a>
+            <a href="#html"><div class="foucsable"><li>html页面内容相关设置</li></div></a>
+            <a href="#func"><div class="foucsable"><li>有意思的功能</li></div></a>
+            <a href="#cont"><div class="foucsable"><li>内容布局</li></div></a>
+            <a href="#puzzle"><div class="foucsable"><li>一些基础知识疑惑</li></div></a>
+        </div>
+    </div>
+    <!--资料重整-->
+    <div id="c-block">
+        <div id="c-full">
+            <a><div class="foucsable" id="whole"><h6>角度选择</h6></div></a>
+            <a><div class="foucsable" id="btn1"><li>网站基础功能的参考资料</li></div></a>
+            <a><div class="foucsable" id="btn2"><li>规范类参考资料</li></div></a>
+            <a><div class="foucsable" id="btn3"><li>主页面参考资料</li></div></a>
+            <a><div class="foucsable" id="btn4"><li>预计未来需要实现的功能的参考资料</li></div></a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-inner">
+            <div class="content">
+                <div class="posts-expand">
+                    <article class="posts-block">
+                        <div class="posts-header">
+                            <h1 class="posts-title" id="refer"><a href="#" class="post-title-link">参考文献</a> </h1>
+                            <div class="posts-meta">
+                                <span>发布于：<a>2022/5/24</a></span> | <span>分类：<a>指南</a></span> | <span>作者：<a>石浩洁</a></span>
+                            </div>
+                            <hr/>
+                        </div>
+                        <div class="post-body">
+                            <div id="preface">
+                                <h2>前言</h2>
+                                <p>这个网站做得好累啊...不过还好大部分功能也算是做完了。</p>
+                                <p>顺便把自己查过的资料也都放在了下面，或许对以后需要学习制作网站的同学有所帮助。（后续会弄个服务器放上去）</p>
+                                <p>顺手写了个制作网站的办法，连接放在下面，可以参考一下</p>
+                                <p><a href="../article/make-web/make-web.html">如何制作自己喜欢的网站？</a></p>
+                                <p>下面是正经的参考资料</p>
+                                
+                                <hr/>
+                            </div>
+
+                            <div id="el">
+                                <h2>基本功能实现</h2>
+                                <p name="3"><a href="https://www.imooc.com/article/14149">如何用js实现动态时钟功能</a> </p>
+                                <p name="1"><a href="https://wenku.baidu.com/view/3ff2af87b3717fd5360cba1aa8114431b90d8e62.html">如何切换css样式？</a> </p>
+                                <hr/>
+                            </div>
+                            
+                            <div id="html">
+                                <h2>html页面内容相关设置</h2>
+                                <p name="1"><a href="https://www.52zixue.com/zhanzhang/webqd/html/05/06/27084/#:~:text=html%20%E7%82%B9%E5%87%BB%E5%9B%BE%E7%89%87%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A%E9%A6%96%E5%85%88%E4%BD%BF%E7%94%A8i%20m%20g%E6%A0%87%E7%AD%BE%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%EF%BC%8C%E7%84%B6%E5%90%8E%E5%9C%A8img%E6%A0%87%E7%AD%BE%E5%A4%96%E5%9B%B4%E5%8C%85%E8%A3%B9a%E6%A0%87%E7%AD%BE%EF%BC%8C%E8%AE%A9img%E6%A0%87%E7%AD%BE%E6%8B%A5%E6%9C%89%E4%B8%80%E4%B8%AA%E8%B6%85%E9%93%BE%E6%8E%A5%E5%8D%B3%E5%8F%AF%EF%BC%9B%E5%85%B7%E4%BD%93%E8%AF%AD%E6%B3%95%E2%80%9C%3Ca%20h,ref%3D%22%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E7%9A%84url%22%3E%3Cimg%20src%3D%22%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%22%20%2F%3E%3C%2Fa%3E%E2%80%9D%E3%80%82%20%E6%9C%AC%E6%95%99%E7%A8%8B%E6%93%8D%E4%BD%9C%E7%8E%AF%E5%A2%83%EF%BC%9Awindows7%E7%B3%BB%E7%BB%9F%E3%80%81HTML5%E7%89%88%E3%80%81Dell%20G3%E7%94%B5%E8%84%91%E3%80%82">如何做到点击图片跳转页面?</a> </p>
+                                
+                                <hr/>
+                            </div>
+                                
+                            <div id="func">
+                                <h2>有意思的功能</h2>
+                                <p name="4"><a href="https://www.cnblogs.com/junshijie/p/7778772.html">如何实现页面内查找功能？</a></p>
+                                <p name="4"><a href="https://www.jianshu.com/p/4cd4f74a0b20">如何实现模糊查找功能？</a></p>
+                                <p name="3"><a href="https://blog.xmwpro.com/">参考了某博客的欢迎弹窗效果</a> </p>
+                                <p name="1"><a href="https://airy-comb-d67.notion.site/WaveNotes-bf4458e1a87a454d957ec44b628cf482">参考了Notion的大纲效果</a> </p>
+                                <p name="1"><a href="https://blog.csdn.net/qq_20497071/article/details/98634736">如何动态改变页面内容</a> </p>
+                                <hr/>
+                            </div>
+                                
+                            <div id="cont">
+                                <h2>内容布局</h2>
+                                <p name="1"><a href="https://riceball.me/">参考了next的内容布局</a> </p>
+                                <hr/>
+                            </div>
+                                
+                            <div id="puzzle">
+                                <h2>一些基础知识疑惑</h2>
+                                <h3>前端代码规范：</h3>
+                                <p name="2"><a href="https://www.zhihu.com/question/19586885">如何规范 CSS 的命名和书写？- 知乎</a></p>
+                                <p name="2"><a href="https://zhuanlan.zhihu.com/p/499982851">关于为什么要规范css代码的解释</a></p>
+                                <p name="2"><a href="https://guide.aotu.io/">Front-End Coding Guidelines</a></p>
+                                <p name="2"><a href="https://github.com/fex-team/styleguide/blob/master/css.md">百度FEX前端团队的CSS代码规范</a></p>
+                                <p name="2"><a href="http://alloyteam.github.io/CodeGuide/">讯AlloyTeam前端团队的CSS代码规范</a></p>
+                                <br/>
+                                <p name="1"><a href="https://blog.csdn.net/weixin_42597880/article/details/100727296">如何做到点击文字转跳到页面特定位置？</a></p>
+                                <p name="2"><a href="https://www.zhihu.com/question/19550864">id和class的区别，以及如何正确使用</a></p>
+                                <p name="2"><a href="https://blog.csdn.net/haifeng_ck/article/details/109644753">到底是用name转跳还是用id转跳？？？</a></p>
+                                <p name="2"><a href="https://blog.csdn.net/r_banyan0820/article/details/80956848">width、height中auto与100%与固定值有什么不同？</a></p>
+                                <p name="2"><a href="https://blog.csdn.net/qq_37787456/article/details/65628506">块状元素与内联元素到底都是些啥？</a></p>
+                                <p name="2"><a href="https://www.coder.work/article/4237377">如何取消weblink的下划线？</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <!--控制风格-->
+    <script>
+        function chgStyle(v){
+            document.getElementsByTagName("link")["pagestyle"].href ="../css/"+v+".css";
+        }
+    </script>
+</html>

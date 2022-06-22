@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>页面排版效果演示</title> 
+        <link rel="shortcut icon" href="../../../images/logo.jpg"/>
+        <link type="text/css" id="pagestyle" rel="stylesheet" href="../../../css/main.css" />
+        <script type="text/javascript" src="../../../js/c-block.js"></script>
+        <script type="text/javascript" src="../../../js/cm.js"></script>
+    </head> 
+    <body> 
+        <!--切换风格-->
+        <div style="position:absolute; right:1px; top:1px; z-index:999;">
+            <select onchange="chgStyle(this.value)">
+                <option selected value="main">白色主题</option>
+                <option value="night">夜间主题</option>
+            </select>
+        </div>
+        <!--播放音乐-->
+        <div id="msc">
+            <button>music</button>
+        </div>
+        <audio src="../../../sound/Strad.mp3" loop preload="auto" id="music"></audio>
+    <!--导航栏-->
+    <header id="header">
+        <a href="../../../index.html"><img style="margin: 9px 0 0 0" src="../../../images/Wave_logo_refine.png" alt="Wave logo" width="66" height="22" ></a>
+        <div class="nav1">
+            <a href="../../html/introduce.html">Wave</a>
+            <div class="nav2">
+                <a href="./trial.html">trial</a>
+                <a href="https://www.zhihu.com/people/bei-pai-si-zai-an-shang-de-qian-lang">知乎</a>
+                <a href="https://space.bilibili.com/35461374?spm_id_from=333.1007.0.0">Bilibili</a>
+                <a href="https://airy-comb-d67.notion.site/WaveNotes-bf4458e1a87a454d957ec44b628cf482">WaveNotes</a>
+            </div>
+        </div>
+        <div class="nav1">
+            <a href="#">Reference</a>
+            <div class="nav2">
+                <a href="https://riceball.me/">Riceball</a>
+                <a href="http://theme-next.iissnan.com/">NexT</a>
+                <a href="../../html/reference.html">参考文献</a>
+            </div>
+        </div>
+        <div class="nav1">
+            <a href="#">Resource</a>
+            <div class="nav2">
+                <a href="../study/study.html">Study</a>
+                <a href="../books/books.html">Books</a>
+                <!-- <a href="http://mergemusic.cn/#/">Music</a> -->
+                <a href="../photograph/photo.html">Photo</a>
+                <a href="../tools/tools.html">Tool</a>
+                <a href="#">Interesting</a>
+            </div>
+        </div>
+        <div class="nav1">
+            <a href="#">Strange</a>
+            <div class="nav2">
+                <a href="https://www.bilibili.com/video/BV1uT4y1P7CX/?spm_id_from=333.788.recommend_more_video.0">恋爱交友</a>
+            </div>
+        </div> 
+    </header>
+
+        <div class="main">
+            <div class="main-inner" style="max-width: 800px">
+                <div class="content">
+                    <div class="posts-expand">
+                        <article class="posts-block">
+                            <div class="posts-header">
+                                <h1 class="posts-title" id="trial"><a href="#" class="post-title-link">页面排版效果演示</a> </h1>
+                                <div class="posts-meta">
+                                    <span>发布于：<a>2022/6/5</a></span> | <span>分类：<a>实验</a></span> | <span>作者：<a>石浩洁</a></span>
+                                </div>
+                                <hr/>
+                            </div>
+                            <div class="post-body">
+                                <style>
+                                    .divs {
+                                      height: 200px;
+                                      margin-bottom: 10px;
+                                      background-color: #a43036;
+                                      display: block;
+                                    }
+                                </style>
+                                <script>
+                                    //等待页面加载完成后才会执行。
+                                    if (document.all)
+                                    {
+                                        window.attachEvent('onload', c_b)
+                                    }
+                                    else
+                                    {
+                                        window.addEventListener('load', c_b, false);
+                                    }
+                                    function c_b() {
+                                      var alll = document.getElementById("alll");
+                                      var btn11 = document.getElementById("btn11");
+                                      var btn22 = document.getElementById("btn22");
+                                      var div11 = document.getElementsByName("11");
+                                      var div22 = document.getElementsByName("22");
+                                  
+                                      alll.onclick = function () {
+                                        for (var i = 0; i < div22.length; i++) {
+                                          div22[i].style.display = "block";
+                                        }
+                                        for (var i = 0; i < div11.length; i++) {
+                                          div11[i].style.display = "block";
+                                        }
+                                      }
+                                
+                                      btn11.onclick = function () {
+                                        for (var i = 0; i < div22.length; i++) {
+                                          div22[i].style.display = "none";
+                                        }
+                                        for (var i = 0; i < div11.length; i++) {
+                                          div11[i].style.display = "block";
+                                        }
+                                      }
+                                  
+                                      btn22.onclick = function () {
+                                        for (var i = 0; i < div11.length; i++) {
+                                          div11[i].style.display = "none";
+                                        }
+                                        for (var i = 0; i < div22.length; i++) {
+                                          div22[i].style.display = "block";
+                                        }
+                                      }
+                                    }
+                                </script>
+                                <input type="button" value="全部" id="alll">
+                                <!-- <div id="all">全部</div> -->
+                                <input type="button" value="展示1" id="btn11">
+                                <!-- <div id="btn1">展示1</div> -->
+                                <input type="button" value="展示2" id="btn22">
+                                <!-- <div id="btn2">展示2</div>  -->
+                                
+                                <div class="divs" name="11">1</div>
+                                <!-- <div class="divs" name="1"><div class="divs" name="2" style="background:green">2</div> 目前这个有缺陷</div>  -->
+                                <div class="divs" name="11">2</div> 
+                                <div class="divs" name="22" style="background:green">3</div>
+                                <div class="divs" name="11">4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!--控制风格-->
+    <script>
+        function chgStyle(v){
+            document.getElementsByTagName("link")["pagestyle"].href ="../../../css/"+v+".css";
+        }
+    </script>
+</html>
