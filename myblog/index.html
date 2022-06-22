@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warld</title>
+    <link rel="shortcut icon" href="./images/logo.jpg"/>
+    <link type="text/css" id="pagestyle" rel="stylesheet" href="./css/main.css">
+    <audio src="./sound/Young Dumb & Broke (inst).mp3" loop preload="auto" id="music"></audio>
+</head>
+<body>
+    <!--切换风格-->
+    <div style="position:absolute; right:1px; top:-7px; z-index:999;">
+        <select onchange="chgStyle(this.value)">
+            <option value="main">白色主题</option>
+            <option value="night">夜间主题</option>
+        </select>
+    </div>
+    <!--导航栏-->
+    <header id="header">
+        <a href="#"><img style="margin: 9px 0 0 0" src="./images/Wave_logo_refine.png" alt="Wave logo" width="66" height="22" ></a>
+        <div class="nav1">
+            <a href="./html/introduce.html">Wave</a>
+            <div class="nav2">
+                <a href="./html/article/trial/trial.html">trial</a>
+                <a href="https://www.zhihu.com/people/bei-pai-si-zai-an-shang-de-qian-lang">知乎</a>
+                <a href="https://space.bilibili.com/35461374?spm_id_from=333.1007.0.0">Bilibili</a>
+                <a href="https://airy-comb-d67.notion.site/WaveNotes-bf4458e1a87a454d957ec44b628cf482">WaveNotes</a>
+            </div>
+        </div>
+        <div class="nav1">
+            <a href="#">Reference</a>
+            <div class="nav2">
+                <a href="https://riceball.me/">Riceball</a>
+                <a href="http://theme-next.iissnan.com/">NexT</a>
+                <a href="./html/reference.html">参考文献</a>
+            </div>
+        </div>
+        <div class="nav1">
+            <a href="#">Resource</a>
+            <div class="nav2">
+                <a href="./html/article/study/study.html">Study</a>
+                <a href="./html/article/books/books.html">Books</a>
+                <a href="http://mergemusic.cn/#/">Music</a>
+                <a href="./html/article/photograph/photo.html">Photo</a>
+                <a href="./html/article/tools/tools.html">Tool</a>
+                <a href="./html/article/interesting/interesting.html">Interesting</a>
+            </div>
+        </div>
+        <div class="nav1">
+            <a href="#">Strange</a>
+            <div class="nav2">
+                <a href="https://www.bilibili.com/video/BV1uT4y1P7CX/?spm_id_from=333.788.recommend_more_video.0">恋爱交友</a>
+            </div>
+        </div> 
+    </header>
+    <!--欢迎弹窗-->
+    <div id="SAO-Notify">
+        <div class="notify-title">Welcome</div>
+        <div class="notify-alert">
+            <span id="Hello">呀？有人来了！</span>
+        </div>
+        <div class="notify-button">
+            <span class="notify-receive">
+                <button name="receive" onclick="cancelNotify()">
+                    <a>√</a>
+                </button>
+            </span>
+        </div>
+    </div>
+    <!--播放音乐-->
+    <div id="msc"><button>music</button></div>
+    <!--页面大纲-->
+    <div id="toc">
+        <div id="full">
+            <a href="#"><div class="foucsable"><h6>主页</h6></div></a>
+            <a href="#preface" name="1"><div class="foucsable"><li>前言</li></div></a>
+            <a href="#how-use" name="1"><div class="foucsable"><li>如何食用该博客？</li></div></a>
+            <a href="#class-func" name="2"><div class="foucsable"><li>课程所需功能</li></div></a>
+            <a href="#my" name="2"><div class="foucsable"><li>本网站的额外功能</li></div></a>
+            <a href="#future" name="3"><div class="foucsable"><li>未来打算实现的功能</li></div></a>
+            <a href="#how-to" name="3"><div class="foucsable"><li>如何制作自己喜欢的网站</li></div></a>
+            <a href="#start" name="4"><div class="foucsable"><li>试验场的起点</li></div></a>
+            
+        </div>
+    </div>  
+    <!--视角选择-资料重整-->
+    <div id="c-block">
+        <div id="c-full">
+            <a><div class="foucsable" id="whole"><h6>角度选择</h6></div></a>
+            <a><div class="foucsable" id="btn1"><li>初来乍到</li></div></a>
+            <a><div class="foucsable" id="btn2"><li>课程内容</li></div></a>
+            <a><div class="foucsable" id="btn3"><li>博客的主要功能</li></div></a>
+            <a><div class="foucsable" id="btn4"><li>一点指南</li></div></a>
+        </div>
+    </div>
+    
+    <!--跑马灯设置-->
+    <style type="text/css">
+        #wrap {
+            width: 100%;
+            margin: auto;
+            border-top: 2px solid green;
+            border-bottom: 2px solid green;
+            white-space: nowrap;
+            overflow: hidden;
+            color: rgb(110, 244, 216);
+            background: #1c1c51;
+        }
+
+        #wrap div {
+            display: inline-block;
+            font-size: 20px;
+        }
+    </style>
+    <div id="wrap">
+        <div id="first">
+            <pre>                                                                                                                                                                                </pre>
+        </div>
+        <div id="mid">
+            欢迎来到我的博客~
+        </div>
+        <div id="last">
+            <pre>                                                                                                                                                                                </pre>
+        </div>
+    </div>
+
+    <!--页面内容-->
+    <div class="main">
+        <div class="main-inner">
+            <div class="content">
+                <div class="posts-expand">
+                    <article class="posts-block">
+                        <div class="posts-header">
+                            <h1 class="posts-title" id="home"><a href="#" class="post-title-link">Welcome~</a> </h1>
+                            <div class="posts-meta"><div id="Time">Time</div></div>
+                        </div>
+                        <div class="post-body">
+                            <div name="1">
+                                <h2 id="preface">前言</h2>
+                                <p>这是一个相当简陋的博客，没有优秀的交互，没有规范的框架，是一个纯粹手动打造出来的网页。</p>
+                                <p>我的博客做得比较简单，功能不算很多，由于很多知识点都还没有学习过，因此很多交互功能我都没有实现，只能做出这样的一个静态网页，实在惭愧。</p>
+                                <p>所以我正重新学习web的相关课程，希望能真正获得有用的知识吧。</p>
+                                <p>在学习过程中，我遇到了很多的坑，而且因为互联网的资料繁杂多样而难以查找到真正有用的东西。因此，我把做这个网站的所有经验都放在这个博客里了，在该博客里，你（目前）可以学到：一周速通web选修课</p>
+                                <p>为了能使学习过程不那么困难，我将大多数学习技巧、知识点、课程所需功能的制作方法等都列举了出来，并加以详细的描述，希望对你有用。</p>
+                                <hr/>
+                            </div>
+                            <div name="1">
+                                <h2 id="how-use">如何食用该博客？</h2>
+                                <p>html确实很有意思，如果未来这个网站能够做到以有史以来最方便的方法来查找资料的话，也许这个idea就能够实现它的最大价值了。为此，我用该博客做了这个测试。</p>
+                                <p>该博客最有意思的功能是博客页面右侧隐藏的视角切换功能。</p>
+                                <p>把鼠标移动到右侧，会出现一个视角选择窗口，如图所示。</p>
+                                <img  src="./images/角度1.png" alt="角度1" class=".medium-zoom-image" onclick="show(this)" />
+                                <p class="img-p">角度1</p>
+                                <img  src="./images/角度2.png" alt="角度2" class=".medium-zoom-image" onclick="show(this)"/>
+                                <p class="img-p">角度2</p>
+                                <p>对于一篇文章来说，不同的人会注意到文章不同的点。例如一个好奇的人只是想看看这个文章有什么新奇的地方，并不想了解到过于深奥的内容，而对于一个相关专业的同学来说，所需要的东西就是文章中有着真材实料的东西。</p>
+                                <p>这个导航栏有着不同的分类，点击之后可以以不同的视角浏览文章，舍去无关内容，同时左侧隐藏大纲也会同步刷新页面内容的大纲。该功能可以最大程度地让不同用户快速搜索到自己需要的资料，减少浪费时间。</p>
+                                <p>请自由探索本博客吧~</p>
+                            </div>
+
+                            <div name="2">
+                            </div>
+                            
+                            <div name="3">
+                                <h2 id="my">本网站已实现的额外功能</h2>
+                                <p>左侧隐藏大纲功能</p>
+                                <p>右侧视角切换功能</p>
+                                <p>右下角页面音乐播放功能（目前仅主页有效，其他页面下无法播放，不知道是在修改什么的过程中出现的bug，至今仍未修复...）</p>
+                                <p>点击图片放大</p>
+                                <hr/>
+                            </div>
+                            
+                            <div name="4">
+                                <h2 id="how-to">如何制作自己喜欢的网站？</h1>
+                                    <h3 id="start">一切的起点</h3>
+                                    <p>我总想在这写点什么...</p>
+                                    <h3 id="refer">如何从其他网站页面中学会制作网站？</h3>
+                                    <p>如今想要调试一个网站，基本都能直接在浏览器中按下F12进入开发者模式即可查看其源代码并更改查看页面布局的变化情况。</p>
+                                    <p>此外，也能够通过 Ctrl + Shift + C 来选择想要查看的元素进行源代码定位，这样就能快速的了解到你需要的相关元素的代码实现办法了。</p>
+                                    <p>在浏览页面的过程中，发现一些好的布局或者有意思的功能，通过这种操作进行参考学习绝对是快速成长的好办法。</p>
+                                    <p>如果说一位程序员还不会从其他程序员的代码中获得灵感，或是不会借鉴其他代码的优秀之处，那么这位程序员绝对是不合格的程序员。</p>
+                                <a href="./html/article/make-web/make-web.html">查看全文</a>
+                                <hr/>
+                            </div>
+
+                            <div name="4">
+                                <h2 id="start">试验场的起点</h2>
+                                <p>我总想在这写点什么...</p>
+                                <p>我在学习各种知识的时候，总是被搜索到的知识与知识之间的不连贯与案例的不直观等问题白白浪费很多的时间。即便互联网非常发达，即便搜索引擎相等之多，想要找到自己需要的东西仍然很难。</p>
+                                <p>为了解决这个问题，我打算在此开始实验性地开创一些课程的指南，让大家在学习一些课程的时候能够节省查找资料的时间，很好地学习到一些有用的案例。</p>
+                                <p>很明显，现在的准备还不够充分，但是我会在以后不断地完善该网站，让大家能够自己制作一些教程以方便大家的学习。</p>
+                                <p>在这里，有这个网页部分页面效果的功能demo演示（因为没时间了！就放一部分吧...），如果你感兴趣的话，可以在下边试试。</p>
+                                <p>演示的后面有效果实现的代码。</p>
+                                <p>希望对你有所帮助。</p>
+                                <a href="./html/article/trial/trial.html">查看全文</a>
+                                <hr/>
+                            </div>
+                            <p class="img-p">到底了哦~</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    
+    <!--控制风格-->
+    <script>
+        function chgStyle(v){
+            document.getElementsByTagName("link")["pagestyle"].href ="./css/"+v+".css";
+        }
+    </script>
+    <!--控制播放音乐-->
+    <script type="text/javascript" src="js/cm.js"></script>
+    <script type="text/javascript" src="js/c-block.js"></script>
+    <!--关闭通知栏-->
+    <script>
+        function cancelNotify(){
+          var notifyWindow = document.getElementById('SAO-Notify');
+          notifyWindow.style.animation = 'flashClose 1.5s ease alternate ';
+          setTimeout(function() {
+            notifyWindow.remove();
+          }, 1e3);
+        }
+    </script>	
+    <!--跑马灯-->
+    <script type="text/javascript">
+        (function () {
+            var wrap = document.getElementById('wrap'), first = document.getElementById('first'), mid = document.getElementById('mid');
+            var timer = window.setInterval(move, 5);
+            wrap.onmouseover = function () {
+                window.clearInterval(timer);
+            };
+            wrap.onmouseout = function () {
+            timer = window.setInterval(move, 5);
+        };
+        function move() {
+            wrap.scrollLeft++;
+            if (wrap.scrollLeft >= first.scrollWidth + mid.scrollWidth) {
+                wrap.scrollLeft = 0;
+            }
+        }
+    })();
+    </script>
+    <!--时间显示-->
+    <script>
+        function myDate(){
+            var now=new Date();
+            var year=now.getFullYear();
+            var month=now.getMonth()+1;
+            var day=now.getDate();
+            var hours=now.getHours();
+            var minutes=now.getMinutes();
+            var seconds=now.getSeconds();
+            document.getElementById("Time").innerHTML="现在是"+year+"年"+month+"月"+day+"日"+hours+":"+minutes+":"+seconds+"，距离网页上架试运行还有?个月。";
+        }
+        setInterval(myDate,1000);
+
+        window.onload = function hi(){
+            var now=new Date();
+            var hours=now.getHours();
+            var hello;
+            if(hours < 5){
+                hello = "你想见凌晨四点的北方工大吗？";
+            } else if(hours < 12){
+                hello = "早啊~";
+            } else if(hours <= 14){
+                hello = "午安~";
+            } else if(hours == 15){
+                hello = "三点钟了，饮茶先啦！";
+            } else if(hours < 18){
+                hello = "下午好~";
+            } else if(hours <= 24){
+                hello = "晚安喵~";
+            }
+            document.getElementById("Hello").innerHTML=hello+"<br/>欢迎来到 石浩洁 的博客";
+        }
+    </script>
+</html>
