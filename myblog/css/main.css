@@ -354,7 +354,8 @@ a:hover{
   max-width: 100%;
 }
 
-.img-p{
+.img-p,
+.p-explain{
   text-align: center;
   color:#999;
 }
