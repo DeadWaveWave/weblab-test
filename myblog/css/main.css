@@ -360,7 +360,8 @@ a:hover{
   color:#999;
 }
 
-code{
+code,
+xmp{
   display: block;
   background:#f6f7ff;
 }

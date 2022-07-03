@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html> 
     <head> 
         <meta charset="utf-8">
@@ -37,7 +38,7 @@
                 <div class="nav2">
                     <a href="https://riceball.me/">Riceball</a>
                     <a href="http://theme-next.iissnan.com/">NexT</a>
-                    <a href="../../html/reference.html">参考文献</a>
+                    <a href="../../reference.html">参考文献</a>
                 </div>
             </div>
             <div class="nav1">
@@ -65,8 +66,12 @@
                 <a href="#start" name="0"><div class="foucsable"><li>一切的起点</li></div></a>
                 <a href="#speed" name="1"><div class="foucsable"><li>如何速通Web技术应用课程？</li></div></a>
                 <a href="#class-func" name="1"><div class="foucsable"><li>速通web课程功能清单</li></div></a>
-                <a href="#refer" name="2"><div class="foucsable"><li>如何仿照目标网页学会制作自己的网页？</li></div></a>
+                <a href="#refer" name="2"><div class="foucsable"><li>如何仿照目标网页制作自己的网页？</li></div></a>
                 <a href="#knowledge" name="3"><div class="foucsable"><li>速通Web知识点</li></div></a>
+                <ol class="ol">
+                    <a href="#relation" name="3"><div class="foucsable"><li>HTML、CSS、JS之间的关系</li></div></a> 
+                    <a href="#html&css" name="3"><div class="foucsable"><li>HTML与CSS</li></div></a>
+                </ol>
                 <a href="#doc" name="4"><div class="foucsable"><li>关于文档</li></div></a>
             </div>
         </div>  
@@ -78,7 +83,6 @@
                 <a><div class="foucsable" id="btn2"><li>Web的学习技巧</li></div></a> 
                 <a><div class="foucsable" id="btn3"><li>速通Web知识点及必要功能实现办法</li></div></a> 
                 <a><div class="foucsable" id="btn4"><li>文档问题</li></div></a>
-                
             </div>
         </div>      
 
@@ -97,10 +101,10 @@
                             <div class="post-body">
                                 <div name="0">
                                     <h2 id="start">一切的起点</h2>
-                                    <p>我总想在这写点什么...</p>
+                                    <p>有很多的知识都相当简单，却因为互联网的繁杂信息让我们眼花缭乱而无从下手。为此，我决定把所有收集过的信息都放在一个网站上，以便同学们的学习。而这，只是一个开始。</p>
                                 </div>
                                 <div name="1">
-                                    <h2 id="speed">如何一周速通Web技术应用课程？</h2>
+                                    <h2 id="speed">如何速通Web技术应用课程？</h2>
                                     <h3>1、关于课程绩点问题</h3>
                                     <p>本课程为专业选修课，<b>不计入保研绩点的计算</b>中，但会<b>计入奖学金的绩点排名计算</b>。</p>
                                     <h3>2、关于结课考核问题</h3>
@@ -160,7 +164,7 @@
                                     <p>4)	整个网站的样式保存在一个 .css 文件夹或文件中。√</p>
                                     <h2>扩展功能描述</h2>
                                     <p>网站风格切换：使用 CSS + JavaScript 实现两种网站风格切换。√</p>
-                                    <p class="p-explain">注：实验还要求说需要至少20个html页面，太离谱了...不过个人认为这不重要</p>
+                                    <p class="p-explain">注：实验还要求说需要至少20个html页面，太离谱了...不过个人认为这不重要，重要的是功能完善。</p>
                                     <hr/>
                                 </div>
                                 
@@ -169,21 +173,73 @@
                                     <p>如今想要调试一个网站，基本都能直接<b>在浏览器中按下F12进入开发者模式即可查看其源代码并更改代码查看页面布局的变化情况（用以学习对应代码的作用）</b>。</p>
                                     <p>在浏览页面的过程中，发现一些好的布局或者有意思的功能，通过这种操作进行参考学习绝对是快速成长的好办法。</p>
                                     <p>此外，也能够<b>通过 Ctrl + Shift + C 来定位想要查看的元素的源代码</b>，这样就能快速的了解到你需要的相关元素的代码实现办法了。</p>
-                                    <img src="./debug.png" alt="网页调试" class=".medium-zoom-image" onclick="show(this)"/>
+                                    <img src="./debug.png" alt="网页调试" class="medium-zoom-image" onclick="show(this)"/>
                                     <p class="p-explain">通过F12调试网页来查看源代码</p>
                                     <p>喜欢某一个页面的文字或样式或大小，想要化为己有时，可以通过这种方式<b>找到对应CSS代码，并复制下来修改并放到自己的CSS中</b>，能够很快地达到统一文字样式的目的。其他效果也是如此，例如主页面中的问候窗口就是我从其他主页中直接</p>
                                     <p>当你<b>想要知道某一CSS内容有什么用/改变时会发生什么变化</b>，可以通过<b>取消/重选CSS效果观察页面变化来判断有什么效果</b>，这样能够快速了解到有效的CSS代码。</p>
+                                    <img src="./CSS.png" alt="CSS调试" class="medium-zoom-image" onclick="show(this)"/>
+                                    <p class="p-explain">在调试的Style中点击取消或重选CSS代码，以了解其作用</p>
                                     <p>如果说一位程序员还不会从其他程序员的代码中获得灵感，或是不会借鉴其他代码的优秀之处，那么这位程序员绝对是不合格的程序员。</p>
                                     <hr/>
                                 </div>
                                 
                                 <div name="3">
                                     <h2 id="knowledge">速通Web知识点</h2>
-                                    <p>最近发现了一个非常有趣的Web自学网站（资源来自MIT开放课程），虽然是全英文的课件，但是词汇简单且专业词汇附有讲解，很容易看懂！</p>
-                                    <p>点击进入<a href="https://weblab.mit.edu/schedule/">该Web自学网站</a>，如果只是想<b>速通</b>的话，其中的<a href="../../../_W0 & HTML CSS.pptx">HTML与CSS课件</a>和<a href="../../../Intro to JavaScript.pptx">JavaScript课件</a>就足够了（如果是通过压缩包访问这个博客的话，可以直接在myblog文件夹中打开这两个PPT。若点击这两个课件链接的话会重复下载...）</p>
-                                    <p>下面是我编写的HTML速通所需要的知识点（<b>为了速通而只提必要的知识点</b>，其他跳过。<b>如果是以做项目作为学习目标的话，请在上面的MIT自学网站中全面学习Web相关知识</b>）</p>
-                                    <h3>1、HTML与CSS</h3>
-                                    <p></p>
+                                    <p>最近发现了一个<a href="https://weblab.mit.edu/schedule/">非常全面且有趣的Web自学网站</a>（资源来自MIT开放课程），虽然是全英文的课件，但是词汇简单且专业词汇附有讲解，很容易看懂！</p>
+                                    <p>如果只是想<b>速通</b>的话，学习其中<a href="../../../_W0 & HTML CSS.pptx">HTML与CSS课件</a>的2~97页和<a href="../../../Intro to JavaScript.pptx">JavaScript课件</a>就足够了，<b>我已经翻译好了课件并完成了详细的讲解！</b></p>
+                                    <p>（如果是通过压缩包访问这个博客的话，可以直接在myblog文件夹中打开这两个PPT。若点击这两个课件链接的话会重复下载...）</p>
+                                    <p>食用方法：<b>不要全屏PPT！！！</b>，知识讲解都在ppt的注释中，请保持如下方式进行学习。</p>
+                                    <img src="./ppt.png" alt="ppt" class="medium-zoom-image" onclick="show(this)" />
+                                    <!-- <p>下面是我编写的HTML速通所需要的知识点（<b>为了速通而只提必要的知识点</b>，其他跳过。<b>如果是以做项目作为学习目标的话，请在上面的MIT自学网站中全面学习Web相关知识</b>）</p> -->
+                                    <p style="color:red"><b>重要说明：我发现这个课件相等不错，比起从零写教程，不如把课件翻译一遍以供大家参考...因此我把自己编写的知识点都屏蔽掉了，大家直接看高质量课件吧~</b></p>
+                                    <p>但是<b>课程相关功能实现的讲解</b>还是有的，<a href="../trial/trial.html">放这里了</a>。</p>
+<!--                                    <h3 id="relation">1、HTML、CSS、JS之间的关系</h3>
+                                    <p>HTML，即Hypertext Markup Language，一种标记语言，这么说起来和MarkDown有点像。总之，就是一种标注文本的语言。</p>
+                                    <img src="./coding.png" alt="HTML界面" class="medium-zoom-image" onclick="show(this)" />
+                                    <p class="p-explain">这就是HTML的编辑界面，可以发现内容都是由各种标签来管理的。</p>
+                                    <p>CSS，即Cascading Style Sheets，一种样式表单，也就是用来描述各种标签的表现效果的表单。</p>
+                                    <img src="./CSS界面.png" alt="CSS界面" class="medium-zoom-image" onclick="show(this)" /> 
+                                    <p class="p-explain">这是CSS的编辑界面，括号内的代码为各种功能的表述。</p>
+                                    <p>JS，即Java Script，有个JAVA在里面，你大概就能猜出这是用来做什么的了。没错，它结合了JAVA编程语言，以实现网页内的交互等功能，让网页活起来。</p>
+                                    <img src="./JS界面.png" alt="JS界面" class="medium-zoom-image" onclick="show(this)" />
+                                    <p class="p-explain">播放音乐，放大图片等功能就是用JS实现的。</p>
+                                    <p><b>HTML是骨架，CSS是装饰，JS是功能。</b>可以认为HTML是骨架，把人体的体型，具有多少个肢体都规定好了，而CSS负责装饰人体，选择皮肤颜色、着装、饰品等。JS则规定人能够做些什么，例如跑步、说话、记住你所说过的东西等都由JS处理，让一个人活起来。</p>
+                                    <img src="./HTML-JS-CSS.png" alt="HTML-JS-CSS" class="medium-zoom-image" onclick="show(this)" />
+                                    <p class="p-explain">三者的对应关系可视化图</p>
+                                    <p>由此可知，<b>没有HTML则没有Web，没有CSS是不美观的，没有JS的网页是死的</b>（即静态网页）。</p>
+                                    <h3 id="html&css">2、HTML与CSS</h3>
+                                    <h4>1）HTML必要知识</h4>
+                                    <p>HTML主要有这么几个部分</p>
+                                    <xmp>
+    <!DOCTYPE html> /* 规定网页为最新版本的HTML，以免在某些浏览器中出现显示错误 */
+    <html>          /* 网页的根基，页面信息都在这个标签里面，没有它就没有网页 */
+      <head>        /* 网页的基础信息根基，在这个标签之中规定页面的基础信息，没有它则没有预设信息、标题等 */
+        <title>Title!</title>   /* 网站标题栏的标题 */
+      </head>       /* head部分的结束标签，有始有终 */
+      <body>        /* 网页的主体，内容都在这里，没有它则没有内容 */
+        <h1>Heading!</h1>       /* 标题标签 */
+          <p>Paragraph!</p>     /* 段落标签 */
+      </body>       /* body部分的结束标签，有始有终 */
+    </html>         /* html的结束标签，有始有终 */
+                                    </xmp>
+                                    <img src="./演示效果.png" alt="演示效果" class="medium-zoom-image" onclick="show(this)" />
+                                    <p class="p-explain">上述代码的实现效果</p>
+                                    <p>演示代码中除了h1、p这两个为文本的标签，可有任意多个以外，代码剩余部分只能出现一次，否则会出现冲突。</p>
+                                    <h4>2）自闭标签</h4>
+                                    <p>也许你有点疑惑，为什么<b> !DOCTYPE html 没有结束标签</b>？这是因为<b>只有可包含文本内容的标签才有结束标签</b>。</p>
+                                    <p>例如img就不能包含文本内容，因此没有结束标签，而是在自己的标签后面加上斜杠表示<b>自我关闭标签，简称自闭标签（self-closing tag)</b>（认真脸）。</p>
+                                    <img src="./img.png" alt="img标签" class="medium-zoom-image" onclick="show(this)" />
+                                    <p class="p-explain">自闭标签要在标签后面加上斜杠</p>
+                                    <h4>3）html常用标签</h4>
+                                    <p>效果实现类：<b>div、header、span、link、script等</b></p>
+                                    <p>div：设置一个区块（block），可以在</p>
+                                    <p>文字编辑类：<b>a、p、h类标签（h1,h2,h3...）、ul、ol、li、img等</b></p>
+                                    <p>你也许有些疑惑：这么多标签我哪记得住啊...</p>
+                                    <p>这就有必要介绍一下CSS了。</p>
+                                    <h4>4）CSS介绍</h4>
+                                    <p>每一个标签，只有预设效果的区别（当然，基本属性标签如html，head，body，title等除外）。例如div标签预设了display:block样式，span预设了display:inline样式，如果将他们的display改变一下，就能当成其他标签使用。而CSS就是用来改变标签样式的工具。</p>
+                                    <p>一般来说，每一个标签都有自己的适用范围，一般不能随意更改其预设样式，但是有时候还是会根据需求进行变通的。在CSS中设置一个class（类），标签采用该类，则是使用了该类所标注的样式，若与标签原本样式具有冲突，优先遵循变更后的属性。</p>
+-->
                                     <hr/>
                                 </div>
 
@@ -191,7 +247,7 @@
                                     <h2 id="doc">关于文档</h2>
                                     <h3 id="docmd">文档的编写问题</h3>
                                     <p>目前还是直接在html内进行编写。</p>
-                                    <img src="./coding.png" alt="写文章" class=".medium-zoom-image" onclick="show(this)" />
+                                    <img src="./coding.png" alt="写文章" class="medium-zoom-image" onclick="show(this)" />
                                     <p>其实我有考虑过用Markdown来写文章，但是一是没找好用什么把Markdown转html，二是由于还没有做好页面，使用不大敢直接用软件转文档。</p>
                                     <p>所以我就只能先这么做啦...</p>
                                     <p>事实上，我很想做到像notion一样直接编写和拖动文章区块的，可惜的是这玩意好像有点难理解。（主要是因为notion的html源代码太乱了，我在想是不是有意这么做以防止我来模仿的emmm）也许以后进一步完善网站之后是可以直接这么做的。</p>
@@ -199,6 +255,10 @@
                                     <p>由于是手动在html写文章，所有页面相关内容更新都要自己去同步，就很麻烦（你问我为啥不找个办法让他自动同步？我要是会这个，还能沦落到手搓html文章的地步?...）</p>
                                     <h3 id="doctoc">文档的大纲导航</h3>
                                     <p>这个大纲样式是按照Notion的左侧大纲模仿制作的，但是由于自己看不懂Notion的源代码，所以自己手搓了一个。（模仿得很恶劣，以后一定完善！嘤嘤嘤(╥╯^╰╥) ）</p>
+                                </div>
+                                <div name="5">
+                                    <h2 id="mistake">教程编写之路的坎坷...</h2>
+                                    <p></p>
                                 </div>
                                 <p class="p-explain">终于结束了...</p>
                             </div>

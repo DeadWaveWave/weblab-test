@@ -7,11 +7,6 @@
         <script type="text/javascript" src="../../../js/c-block.js"></script>
         <script type="text/javascript" src="../../../js/cm.js"></script>
         <audio src="../../../sound/Strad.mp3" loop preload="auto" id="music"></audio>
-        <style>
-            xmp{
-                background:#f6f7ff
-            }
-        </style>
     </head> 
     <body> 
         <!--切换风格-->
@@ -66,24 +61,24 @@
         <div id="toc">
             <div id="full">
                 <a href="#"><div class="foucsable"><h6>大型试验场</h6></div></a>
-                <a href="#start" name="1"><div class="foucsable"><li>一切的起点</li></div></a>
+                <a href="#start" name="1"><div class="foucsable"><li>我为什么要写这个试验场？</li></div></a>
+                <a href="#how-do" name="1"><div class="foucsable"><li>如何食用</li></div></a>
                 <a href="#time" name="2"><div class="foucsable"><li>时间显示效果演示</li></div></a>
                 <a href="#arr" name="3"><div class="foucsable"><li>页面排版效果演示</li></div></a>
-                <a href="#img" name="4"><div class="foucsable"><li>点击图片放大的简易演示</li></div></a>
-                <a href="#img" name="5"><div class="foucsable"><li>跑马灯效果</li></div></a>
-                <a href="#cmt" name="6"><div class="foucsable"><li>一个无效的留言板</li></div></a>
+                <a href="#img" name="3"><div class="foucsable"><li>点击图片放大的简易演示</li></div></a>
+                <a href="#img" name="2"><div class="foucsable"><li>跑马灯效果</li></div></a>
+                <a href="#cmt" name="4"><div class="foucsable"><li>一个无效的留言板</li></div></a>
             </div>
         </div>        
         <!--资料重整-->
         <div id="c-block">
             <div id="c-full">
                 <a><div class="foucsable" id="whole"><h6>角度选择</h6></div></a>
-                <a><div class="foucsable" id="btn1"><li>我为什么要写这个试验场？</li></div></a>
-                <a><div class="foucsable" id="btn2"><li>时间显示效果演示</li></div></a>
-                <a><div class="foucsable" id="btn3"><li>页面排版效果演示</li></div></a>
-                <a><div class="foucsable" id="btn4"><li>点击图片放大的简易演示</li></div></a>
-                <a><div class="foucsable" id="btn5"><li>跑马灯效果</li></div></a>
-                <a><div class="foucsable" id="btn6"><li>一个无效的留言板</li></div></a>
+                <a><div class="foucsable" id="btn1"><li>初来乍到</li></div></a>
+                <a><div class="foucsable" id="btn2"><li>课程要求内容</li></div></a>
+                <a><div class="foucsable" id="btn3"><li>其他功能</li></div></a>
+                <a><div class="foucsable" id="btn4"><li>失败的功能</li></div></a>
+                <a><div class="foucsable" id="btn5"><li>坎坷经历</li></div></a>
             </div>
         </div>
 
@@ -101,7 +96,7 @@
                             </div>
                             <div class="post-body">
                                 <div name="1">
-                                    <h2 id="start">试验场的起点</h2>
+                                    <h2 id="start">我为什么要写这个试验场？</h2>
                                     <p>我总想在这写点什么...</p>
                                     <p>我在学习各种知识的时候，总是被搜索到的知识与知识之间的不连贯与案例的不直观等问题白白浪费很多的时间。即便互联网非常发达，即便搜索引擎相等之多，想要找到自己需要的东西仍然很难。</p>
                                     <p>为了解决这个问题，我打算在此开始实验性地开创一些课程的指南，让大家在学习一些课程的时候能够节省查找资料的时间，很好地学习到一些有用的案例。</p>
@@ -111,32 +106,36 @@
                                     <p>希望对你有所帮助。</p>
                                     <hr/>
                                 </div>
+                                
+                                <h3 class="posts-title" style="color:rgb(110, 244, 216); background:#1c1c51">Java Script 区</h3>
                                 <div name="2">
-                                    <h1 id="time">时间显示效果演示</h1>
-                                    <a href="./time.html">页面效果呈现</a>
+                                    <h2 id="time">时间显示效果演示</h2>
                                     <div id="Time">Time</div>
                                     <p><b>代码实现：</b></p>
                                     <xmp style="background:#f6f7ff">
-        <script>
-            function myDate(){
-                var now=new Date();
-                var year=now.getFullYear();
-                var month=now.getMonth()+1;
-                var day=now.getDate();
-                var hours=now.getHours();
-                var minutes=now.getMinutes();
-                var seconds=now.getSeconds();
-                
-                document.getElementById("Time").innerHTML=year+"年"+month+"月"+day+"日"+hours+":"+minutes+":"+seconds;
-            }
-            setInterval(myDate,1000);
-        </script>
+    <script>
+        function myDate(){
+            var now=new Date();
+            var year=now.getFullYear();
+            var month=now.getMonth() + 1; /* 众所周知，程序员从0开始数数...(bushi) */
+            var day=now.getDate();
+            var hours=now.getHours();
+            var minutes=now.getMinutes();
+            var seconds=now.getSeconds();
+            
+            document.getElementById("Time").innerHTML=year+"年"+month+"月"+day+"日"+hours+":"+minutes+":"+seconds;
+        }
+        setInterval(myDate,1000);
+    </script>
 
-        <div id="Time">Time</div>
+    <div id="Time">Time</div>
                                     </xmp>
+                                    <h3>代码讲解</h3>
+                                    <p>javascript的变量都是用var进行声明的！是不是非常方便~</p>
+                                    <p>获取时间后，通过document.getElementById("Time").innerHTML语句输出到id为Time的元素中，实现时间显示。语句含义为：在文档中获取id为Time的元素，将该HTML标签内容改为...（等号右侧内容）。</p>
+                                    <p>通过setInterval(myDate,1000)每隔一秒(1000ms)执行一次函数，达到刷新时间的效果。</p>
                                     <hr/>
                                 </div>
-
 
                                 <div name="3">
                                     <h1 id="arr">页面排版效果演示</h1>
@@ -210,6 +209,19 @@
 
                                     <p><b>代码实现：</b></p>
                                     <xmp style="background:#f6f7ff">
+            <input type="button" value="全部" id="all">
+            <input type="button" value="展示1" id="btn1">
+            <input type="button" value="展示2" id="btn2">
+            <!-- 不用按钮也行，只要id对应即可，例如下面用div的例子（实际上这个网站的视角切换就是用div实现的） -->
+            <!-- <div id="all">全部</div> -->
+            <!-- <div id="btn1">展示1</div> -->
+            <!-- <div id="btn2">展示2</div>  -->
+                                        
+            <div class="divs" name="11" style="background:red">1</div>
+            <div class="divs" name="11" style="background:red">2</div> 
+            <div class="divs" name="22" style="background:green">3</div>
+            <div class="divs" name="11" style="background:red">4</div>
+
         <script>
             //等待页面加载完成后才会执行。
             window.onload = function () {
@@ -247,27 +259,22 @@
                 }
             }
             </script>
-
-            <input type="button" value="全部" id="all">
-            <input type="button" value="展示1" id="btn1">
-            <input type="button" value="展示2" id="btn2">
-            <!-- 如果是不用按钮的话，就用下面的办法 -->
-            <!-- <div id="all">全部</div> -->
-            <!-- <div id="btn1">展示1</div> -->
-            <!-- <div id="btn2">展示2</div>  -->
-                                        
-            <div class="divs" name="11" style="background:red">1</div>
-            <div class="divs" name="11" style="background:red">2</div> 
-            <div class="divs" name="22" style="background:green">3</div>
-            <div class="divs" name="11" style="background:red">4</div>
                                     </xmp>
+                                    <h3>代码讲解</h3>
+                                    <p><b>精简：</b></p>
+                                    <p>以区块划分网页中的内容，并为区块按照内容构成分类不同的name属性。在点击某一视角时，先让所有区块消失，再让视角对应的区块显示，达到选择显示不同视角下的文章内容。</p>
+                                    <p><b>详细：</b></p>
+                                    <p></p>
                                     <hr/>
                                 </div>
                                 
-                                <div name="4">
+                                <div name="3">
                                     <h2 id="img">点击图片放大的简易演示</h2>
                                     <img  src="../../../images/海边划水的浪花.jpg" alt="海边划水的浪花" class=".medium-zoom-image" style="width:300px; height:300px" onclick="show(this)"/>
                                     <xmp>
+    <img src="海边划水的浪花.jpg" alt="海边划水的浪花" class=".medium-zoom-image" 
+    style="width:300px; height:300px" onclick="show(this)"/>
+
     <script>
         var flag=false;
         function show(pic){
@@ -280,8 +287,6 @@
             }
         }
     </script>
-
-    <img  src="../images/海边划水的浪花.jpg" alt="海边划水的浪花" class=".medium-zoom-image" style="width:300px; height:300px" onclick="show(this)"/>
                                     </xmp>
                                     <hr/>
                                 </div>
@@ -302,7 +307,7 @@
                                         font-size: 20px;
                                     }
                                 </style>
-                                <div name="5">
+                                <div name="2">
                                     <h3>跑马灯效果</h3>
                                     <a href="../../../index.html">页面效果</a>
                                     <div id="wrap">
@@ -335,22 +340,18 @@
         }
     </style>
 
-    <div>
-        <h3>跑马灯效果</h3>
-        <div id="wrap">
-            <div id="first">
-                <pre>                                                                                        </pre>
-            </div>
-            <div id="mid">
-                曾经有一份真诚的指南放在我面前，我没有珍惜，等我失去的时候我才后悔莫及，人世间最痛苦的事莫过于此。
-                如果上天能够给我一个再来一次的机会，我会对那个男孩子说：生产队的驴都不敢这么歇的！
-                如果非要在这份努力上加上一个期限，我希望是……一万年
-            </div>
-            <div id="last">
-                <pre>                                                                                        </pre>
-            </div>
+    <div id="wrap">
+        <div id="first">
+            <pre>                                                                                        </pre>
         </div>
-        <hr/>
+        <div id="mid">
+            曾经有一份真诚的指南放在我面前，我没有珍惜，等我失去的时候我才后悔莫及，人世间最痛苦的事莫过于此。
+            如果上天能够给我一个再来一次的机会，我会对那个男孩子说：生产队的驴都不敢这么歇的！
+            如果非要在这份努力上加上一个期限，我希望是……一万年
+        </div>
+        <div id="last">
+            <pre>                                                                                        </pre>
+        </div>
     </div>
 
     <script type="text/javascript">
@@ -374,10 +375,12 @@
         })();
     </script>
                                 </xmp>
+                                <h3>代码讲解：</h3>
+                                <p>通过wrap.scrollLeft++移动文字，用空格填充前后区域，当文字离开显示区域时重置wrap.scrollLeft，即可实现跑马灯效果。</p>
                                 <hr/>
                                 </div>
 
-                                <div name="6">
+                                <div name="4">
                                     <h3 id="cmt">留言版（这是一个无效的功能）</h3>
                                     <p>还不会存数据，所以用不了emmm</p>
                                     <ol id="olid">
@@ -386,6 +389,10 @@
                                     <textarea id="txtCom"></textarea>
                                     <br />
                                     <button id="btnx">评论</button>
+                                </div>
+                                <h3 class="posts-title" style="color:rgb(110, 244, 216); background:#1c1c51">CSS 区</h3>
+                                <div>
+
                                 </div>
                                 <p class="img-p">-我是有底线的-</p>
                             </div>
@@ -428,15 +435,15 @@
             window.clearInterval(timer);
         };
         wrap.onmouseout = function () {
-        timer = window.setInterval(move, 5);
-    };
-    function move() {
-        wrap.scrollLeft++;
-        if (wrap.scrollLeft >= first.scrollWidth + mid.scrollWidth) {
-            wrap.scrollLeft = 0;
+            timer = window.setInterval(move, 5);
+        };
+        function move() {
+            wrap.scrollLeft++;
+            if (wrap.scrollLeft >= first.scrollWidth + mid.scrollWidth) {
+                wrap.scrollLeft = 0;
+            }
         }
-    }
-})();
+    })();
 </script>
 
     <!--发表评论-->
